@@ -1,0 +1,12 @@
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\bin\Debug\net6.0-windows\model.deps.json
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\bin\Debug\net6.0-windows\model.dll
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\bin\Debug\net6.0-windows\model.pdb
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\obj\Debug\net6.0-windows\model.csproj.AssemblyReference.cache
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\obj\Debug\net6.0-windows\model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\obj\Debug\net6.0-windows\model.AssemblyInfoInputs.cache
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\obj\Debug\net6.0-windows\model.AssemblyInfo.cs
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\obj\Debug\net6.0-windows\model.csproj.CoreCompileInputs.cache
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\obj\Debug\net6.0-windows\model.dll
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\obj\Debug\net6.0-windows\refint\model.dll
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\obj\Debug\net6.0-windows\model.pdb
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\obj\Debug\net6.0-windows\ref\model.dll

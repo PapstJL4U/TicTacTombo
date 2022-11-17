@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacWPF", "view\TicTacWPF.csproj", "{D348893B-1B59-4C56-BBAE-8F988E2C1FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "model", "model\model.csproj", "{B1DD1384-6FBF-4BF7-A7F8-43606CB51B59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D348893B-1B59-4C56-BBAE-8F988E2C1FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D348893B-1B59-4C56-BBAE-8F988E2C1FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D348893B-1B59-4C56-BBAE-8F988E2C1FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D348893B-1B59-4C56-BBAE-8F988E2C1FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1DD1384-6FBF-4BF7-A7F8-43606CB51B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DD1384-6FBF-4BF7-A7F8-43606CB51B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DD1384-6FBF-4BF7-A7F8-43606CB51B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DD1384-6FBF-4BF7-A7F8-43606CB51B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B826A3E3-B82A-4417-B88A-8D067E2BC10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B826A3E3-B82A-4417-B88A-8D067E2BC10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B826A3E3-B82A-4417-B88A-8D067E2BC10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B826A3E3-B82A-4417-B88A-8D067E2BC10A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3 @@
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\bin\Debug\net6.0-windows\publish\model.dll
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\bin\Debug\net6.0-windows\publish\model.deps.json
+C:\Users\Johannes.Lieberodt\Documents\Share\TicTacToeWPF\TicTacWPF\model\bin\Debug\net6.0-windows\publish\model.pdb

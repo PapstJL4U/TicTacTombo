@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TicTacToe.controller.CSpiel">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAIAAAAAAAAAACAQAAFAEAAAJQAAAAAAAAAAAgA=</HashCode>
+      <FileName>controller\CSpiel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.Form1" Collapsed="true">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BDABBMSAAigAAGIAQGGAHBEaAAAADxE8AACAAAAADYg=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.Program" Collapsed="true">
+    <Position X="13" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="model.Spieler" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAAAAEAAAAEAAAASAAAUAAAAgAAAABAAAAAA=</HashCode>
+      <FileName>model\Spieler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="model.Spielfeld" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiAEgAAAAAAgAAAAAAAAQACAAAAAAAAAggAAAAAAAA=</HashCode>
+      <FileName>model\Spielfeld.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="model.Spielregeln" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAACABAQAAAAEAEAAcAAAAIAAAAACAAAAAAAAA=</HashCode>
+      <FileName>model\Spielregeln.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="model.Spielstein" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAgAAAAAAAABAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>model\Spielstein.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="model.Spielsteinfeld" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiAAABAgAAAAAoAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\Spielsteinfeld.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TicTacToe.Properties.Resources" Collapsed="true">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAMA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TicTacToe.Properties.Settings" Collapsed="true">
+    <Position X="9.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="model.ISpielsteinfeld">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\interfaces\ISpielsteinfeld.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="model.ISpieler">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAAAAEAAAAEAAAAQAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\interfaces\ISpieler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="model.ISpielfeld">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>model\interfaces\ISpielfeld.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="model.ISpielstein">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\interfaces\ISpielstein.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="model.ISpielregeln">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\interfaces\ISpielregeln.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="model.Farbe">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAEAAAAAAAAAAAAAAAAAgAAAAAAABEAAAA=</HashCode>
+      <FileName>model\Farbe.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

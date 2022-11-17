@@ -1,0 +1,39 @@
+﻿<Window x:Class="TicTacWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacWPF"
+        mc:Ignorable="d"
+        Title="SuperTicTacToe" Height="450" Width="800" MinHeight="300" MinWidth="400">
+        <DockPanel x:Name="AppDock">
+                <Grid x:Name="header" DockPanel.Dock="Top" MinHeight="50" >
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>	
+
+                        <Label x:Name="player1" VerticalAlignment="Center" Grid.Column="0">Alice Little</Label>
+                        <Label x:Name="p1wins" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1">0</Label>
+
+                        <Image x:Name="arrow" Height="40" Source="res/default_h50.png"  Grid.Column="2" />
+
+                        <Label x:Name="player2" VerticalAlignment="Center" Grid.Column="3">Barbara Gordon</Label>
+                        <Label x:Name="p2wins" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="4">0</Label>
+                </Grid>
+
+                <Grid x:Name="feeder" DockPanel.Dock="Bottom" MinHeight="50">
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="newButton" Click="neuesSpiel" Grid.Column="0">Neues Spiel</Button>
+                        <TextBlock x:Name="tb_output" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">Hier antwortet das System. =)</TextBlock>
+                </Grid>
+        </DockPanel>
+</Window>
