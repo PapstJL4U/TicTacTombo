@@ -23,21 +23,21 @@ center = sg.Column(
                 [
                     [
                         sg.Button(
-                            "0_0",
+                            "",
                             key=(0, 0),
                             size=(10, 5),
                             expand_y=True,
                             expand_x=True,
                         ),
                         sg.Button(
-                            "0_1",
+                            "",
                             key=(0, 1),
                             size=(10, 5),
                             expand_y=True,
                             expand_x=True,
                         ),
                         sg.Button(
-                            "0_2",
+                            "",
                             key=(0, 2),
                             size=(10, 5),
                             expand_y=True,
@@ -46,21 +46,21 @@ center = sg.Column(
                     ],
                     [
                         sg.Button(
-                            "1_0",
+                            "",
                             key=(1, 0),
                             size=(10, 5),
                             expand_y=True,
                             expand_x=True,
                         ),
                         sg.Button(
-                            "1_1",
+                            "",
                             key=(1, 1),
                             size=(10, 5),
                             expand_y=True,
                             expand_x=True,
                         ),
                         sg.Button(
-                            "1_2",
+                            "",
                             key=(1, 2),
                             size=(10, 5),
                             expand_y=True,
@@ -69,21 +69,21 @@ center = sg.Column(
                     ],
                     [
                         sg.Button(
-                            "2_0",
+                            "",
                             key=(2, 0),
                             size=(10, 5),
                             expand_y=True,
                             expand_x=True,
                         ),
                         sg.Button(
-                            "2_1",
+                            "",
                             key=(2, 1),
                             size=(10, 5),
                             expand_y=True,
                             expand_x=True,
                         ),
                         sg.Button(
-                            "2_2",
+                            "",
                             key=(2, 2),
                             size=(10, 5),
                             expand_y=True,
@@ -116,24 +116,22 @@ _layout = [[header], [center], [feeder]]
 
 
 class gui(object):
-    col_dict = { Farbe.Blue :  "Blue",
-    Farbe.Green : "LightGreen",
-    Farbe.Red : "LightRed",
-    Farbe.Orange : "Organge",
-    Farbe.Purple : "Purple",
-    Farbe.Azure : "LightBlue"}
-    
+    col_dict = {
+        Farbe.Blue: "Blue",
+        Farbe.Green: "LightGreen",
+        Farbe.Red: "LightRed",
+        Farbe.Orange: "Organge",
+        Farbe.Purple: "Purple",
+        Farbe.Azure: "LightBlue",
+    }
+
     def __init__(self, controller=None):
         self._window = sg.Window("TicTacPy", _layout, resizable=True, finalize=True)
         self._controller: cs.IController = controller
 
-    def update_Button(
-        self, row: int = 0, col: int = 0, farbe: Farbe = Farbe.Azure
-    ) -> None:
+    def update_Button(self, row: int = 0, col: int = 0, farbe: Farbe = Farbe.Azure) -> None:
 
-        self._window[(row, col)].update(
-            text=" ", button_color=("black", gui.col_dict[farbe]), disabled=True
-        )
+        self._window[(row, col)].update(text=" ", button_color=("black", gui.col_dict[farbe]), disabled=True)
         self._window.refresh()
 
     def Game_won(self, wins: int = 0, SpielerID: int = -1, Name: str = "CC"):
@@ -154,27 +152,19 @@ class gui(object):
         self._controller.neuesSpiel()
         for row in range(3):
             for col in range(3):
-                self._window[(row, col)].update(
-                    text="", button_color=("black", "#f0f0f0"), disabled=False
-                )
+                self._window[(row, col)].update(text="", button_color=("black", "#f0f0f0"), disabled=False)
         self._window.refresh()
-    
-    def setArrow(self, spieler:int=-1, far:Farbe=None):
-        if spieler==0:
+
+    def setArrow(self, far: Farbe, spieler: int = -1):
+        if spieler == 0:
             val = "<<"
         else:
             val = ">>"
-        self._window["-arrow-"].update(value=val, background_color = gui.col_dict[far])
+        self._window["-arrow-"].update(value=val, background_color=gui.col_dict[far])
 
-    def setSpieler(
-        self,
-        P1: str = "Alice",
-        P2: str = "Cassandra",
-        f1: Farbe = None,
-        f2: Farbe = None
-    ):
-        self._window["-p1-"].update(value=P1, background_color = gui.col_dict[f1])
-        self._window["-p2-"].update(value=P2, background_color = gui.col_dict[f2])
+    def setSpieler(self, P1: str = "Alice", P2: str = "Cassandra", f1: Farbe = Farbe.Azure, f2: Farbe = Farbe.Green):
+        self._window["-p1-"].update(value=P1, background_color=gui.col_dict[f1])
+        self._window["-p2-"].update(value=P2, background_color=gui.col_dict[f2])
 
         self._window.refresh()
 
@@ -185,7 +175,7 @@ class gui(object):
 
     def start_up(self):
         while True:
-            event, values = self._window.read()
+            event, _ = self._window.read()
             if event == sg.WIN_CLOSED or event == "Cancel":
                 break
             if event == "-newgame-":

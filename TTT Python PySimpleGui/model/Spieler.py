@@ -2,7 +2,7 @@ from model.Farbe import Farbe
 
 
 class Spieler(object):
-    def __init__(self, Name: str = "Alice Little", Id: int = -1, Farbe: Farbe = None):
+    def __init__(self, Farbe: Farbe, Name: str = "Alice Little", Id: int = -1):
         self._name = Name
         self._id = Id
         self._wins = 0

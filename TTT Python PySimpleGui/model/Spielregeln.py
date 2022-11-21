@@ -4,27 +4,19 @@ from model.Farbe import Farbe
 
 
 class Spielregeln(object):
-    def __init__(self, win_len: int = 3, Feld: Spielfeld = None):
+    def __init__(self, Feld: Spielfeld, win_len: int = 3):
         self._win_length: int = win_len
         self._Feld: Spielfeld = Feld
         self._max_row: int = Feld.row
         self._max_col: int = Feld.col
 
-    def ist_gueltiger_Zug(
-        self, row: int = 0, col: int = 0, Stein: Spielstein = None
-    ) -> bool:
-        return self._Feld.set_Spielstein(row, col, Stein)
+    def ist_gueltiger_Zug(self, Stein: Spielstein, row: int = 0, col: int = 0) -> bool:
+        return self._Feld.set_Spielstein(Stein, row, col)
 
-    def istGewonnen(self, Spielerfarbe: Farbe = None) -> bool:
-        return (
-            self._Horizontal(Spielerfarbe)
-            or self._Vertikal(Spielerfarbe)
-            or self._Diagonal(Spielerfarbe)
-        )
+    def istGewonnen(self, Spielerfarbe: Farbe) -> bool:
+        return self._Horizontal(Spielerfarbe) or self._Vertikal(Spielerfarbe) or self._Diagonal(Spielerfarbe)
 
-    def _Vertikal(
-        self, Spielerfarbe: Farbe = None
-    ) -> bool:
+    def _Vertikal(self, Spielerfarbe: Farbe) -> bool:
         win: bool = False
         for c in range(self._max_col):
             in_a_col: int = 0
@@ -42,9 +34,7 @@ class Spielregeln(object):
                 break
         return win
 
-    def _Horizontal(
-        self, Spielerfarbe: Farbe = None
-    ) -> bool:
+    def _Horizontal(self, Spielerfarbe: Farbe) -> bool:
         win: bool = False
         for r in range(self._max_row):
             in_a_row: int = 0
@@ -62,17 +52,17 @@ class Spielregeln(object):
                 break
         return win
 
-    def _Diagonal(self, Spielerfarbe: Farbe = None):
+    def _Diagonal(self, Spielerfarbe: Farbe):
         return self._dia_down(Spielerfarbe) or self._dia_up(Spielerfarbe)
 
-    def _dia_down(self, Spielerfarbe: Farbe = None):
-        
+    def _dia_down(self, Spielerfarbe: Farbe):
+
         win: bool = False
         max_index_row: int = self._max_row - self._win_length + 1
         max_index_col: int = self._max_col - self._win_length + 1
 
-        for r in range(0,max_index_row):
-            for c in range(0,max_index_col):
+        for r in range(0, max_index_row):
+            for c in range(0, max_index_col):
                 in_a_dia: int = 0
                 for dt in range(self._win_length):
                     Stein: Spielstein = self._Feld.get_Spielstein(r + dt, c + dt)
@@ -89,14 +79,14 @@ class Spielregeln(object):
 
         return win
 
-    def _dia_up(self, Spielerfarbe: Farbe = None):
+    def _dia_up(self, Spielerfarbe: Farbe):
         win: bool = False
 
         min_index_row: int = self._win_length - 1 - 1
         max_index_col: int = self._max_col - self._win_length + 1
 
         for r in range(self._max_row - 1, min_index_row, -1):
-            for c in range(0,max_index_col):
+            for c in range(0, max_index_col):
                 in_a_dia: int = 0
 
                 for dt in range(self._win_length):

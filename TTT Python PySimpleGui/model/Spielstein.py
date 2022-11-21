@@ -1,7 +1,8 @@
 from model.Farbe import Farbe
 
+
 class Spielstein(object):
-    def __init__(self, Farbe: Farbe = None, ID: int = -1):
+    def __init__(self, Farbe: Farbe, ID: int = -1):
         self._Farbe = Farbe
         self._id = ID
 
